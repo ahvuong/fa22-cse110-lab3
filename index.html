@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meeting Minutes</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 1.5px solid rgb(50,50,50);
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+            }
+            td, th {
+                border: 1px solid rgb(70,70,70);
+                padding: 10px 50px;
+            }
+            th {
+                text-align: center;
+            }
+            td {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://w7.pngwing.com/pngs/561/477/png-transparent-united-states-meeting-computer-icons-agenda-minutes-meeting-text-logo-business.png"
+            alt="Meeting Icon" width="150"> 
+        <header style="text-align: center;">
+        <h1>TEAM MEETING MINUTES</h1>
+        </header>
+        
+        <hr>
+        <h4>
+            Date: Monday, October 3, 2022<br>
+            Time: 5:00 PM<br>
+            Location: WLH2001<br>
+            Zoom Meeting ID: 546 830 7330 (Pass: dAbj8e)
+        </h4>
+        <hr>
+        <h2>Meeting Contents</h2>
+        <details>
+            <summary>Details</summary>
+            <nav>
+                <ol>
+                    <li><a href="#attendees">Attendees</a></li>
+                    <li><a href="#unfinishedbusiness">Unfinished Business</a></li>
+                    <li><a href="#newbusiness">New Business Discussion</a></li>
+                    <li><a href="#note">Meeting Notes</a></li>
+                    <li><a href="#concerns">Additional Concerns</a></li>
+                    <li><a href="#diagram">Diagram</a></li>
+                    <li><a href="#recording">Meeting Recording</a></li>
+                    <li><a href="#comments">Comments</a></li>
+                </ol>
+            </nav>
+        </details>
+
+        <hr>
+        <main>
+            <h2 id="attendees">Attendees</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Major</th>
+                    <th>Project Role</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Kathleen David</td>
+                    <td>CS</td>
+                    <td>Leader</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>Roger Washington</td>
+                    <td>CE</td>
+                    <td>Planner</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>Joyce Simon</td>
+                    <td>CS</td>
+                    <td>Developer</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>Tim Roberts</td>
+                    <td>Math-CS</td>
+                    <td>Developer</td>
+                    <td>Present</td>
+                </tr>
+                <tr>
+                    <td>Hayes Jefferson</td>
+                    <td>CS</td>
+                    <td>Tester</td>
+                    <td>Absent</td>
+                </tr>
+            </table>
+            <h2 id="unfinishedbusiness">Unfinished Business (20 minutes)</h2>
+                <h4>Budget Report (10 minutes)</h4>
+                    <p>The budget for the project in previous meeting has been finalized, and 
+                    was distributed at this meeting by <strong>Kathleen</strong>. <br>The main change was an increased 
+                    spend. The motion to accept the revised budget was seconded and passed.
+                    </p>
+                <h4>Software Research result (10 minutes)</h4>
+                    <p><strong>Roger</strong> explained the result of the research that she has been doing into new software
+                    application. <br>In this meeting, she explain about her plan for developing this project. <br>
+                    Her plan got approved by TA and team leader.
+                    </p>
+            <h2 id="newbusiness">New Business Discussion (20 minutes)</h2>
+                <h4>Project Plan</h4>
+                    <p>Proceeding the project. Team leader shows a clear reporting structure for roles, tasks, and core duties.<br>
+                    Roles are assigned to all members by <em><strong>Kathleen</strong> - team leader</em>. All are expected to be on time for the next meeting <br>
+                    and be present during the whole meetings.
+                    </p>
+            <h2 id="note">Meeting Notes (10 minutes)</h2>
+                <ul>
+                    <li>Seek out the feedback from peers.</li>
+                    <li>Be accountable for all mistakes and share experience.</li>
+                    <li>Prioritize team's success.</li>
+                    <li>Raise flag when seeing blockers.</li>
+                    <li>Ask for help/question if anything is not clear.</li>
+                    <li>Respect others.</li>
+                </ul>
+            
+            <h2 id="concerns">Additional Concerns (10 minutes)</h2>
+                <p><strong>Hayes</strong> is absent and needs to catch up the discussed plan and product later. <strong>Joyce</strong> and <strong>Tim</strong> will present <br>
+                a short demo and <strong>Hayes</strong> will update testing plan in the next meeting.
+                Meanwhile, <strong>Kathleen</strong> and <strong>Roger</strong> <br>keep up to date the process.
+                </p>
+            
+            <h2 id="diagram">Diagram</h2>
+                <label for="diagram">Class Diagram</label><br>
+                <img src="https://williamswu.files.wordpress.com/2016/04/uml2_simple_class_diagram1.png" alt="diagram">
+
+            <h2 id="recording">Recording</h2>
+                <figcaption>Meeting Audio:</figcaption>
+                <audio controls src="./Meeting Audio.mp3"></audio><br><br>
+                <figcaption>Meeting Video:</figcaption>
+                <video controls width="750"><source src="./Meeting Video.mp4"
+                    type="video/mp4">video</video>
+            
+            <h2 id="comments">Comments</h2>
+                <div>
+                    <Label>Name</Label>
+                    <input type="text" maxlength="255"><br><br>
+                </div>
+                <div>
+                    <Label>Email</Label>
+                    <input type="email" maxlength="255"><br><br>
+                </div>
+                <div>
+                    <Label for="phone">Phone</Label>
+                    <input type="tel" id="phone" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                </div>
+                <div>
+                    <Label>Message</Label>
+                    <textarea name="message" cols="50" rows="10" width="100%"></textarea><br><br>
+                </div>
+                <fieldset>
+                    <legend>Select Your Role:</legend>
+                    <div>
+                        <input type="radio" id="leader" value="Leader">
+                        <label for="leader">Leader</label><br>
+                        <input type="radio" id="developer" value="Developer">
+                        <label for="developer">Developer</label><br>
+                        <input type="radio" id="planner" value="Planner">
+                        <label for="planner">Planner</label><br>
+                        <input type="radio" id="testing" value="Testing">
+                        <label for="testing">Testing</label>
+                    </div>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>Preferred Contact Method:</legend>
+                    <div>
+                        <input type="checkbox" id="email" value="Email">
+                        <label for="email">Email</label><br>
+                        <input type="checkbox" id="phone" value="Phone">
+                        <label for="phone">Phone</label><br>
+                        <input type="checkbox" id="text" value="Text">
+                        <label for="text">Text</label><br>
+                    </div>
+                </fieldset><br>
+                <div>
+                    <label for="start">Submission Date</label>
+                    <input type="date" id="start" name="trip-start" value="2022-10-04" 
+                            min="2014-01-01" max="2040-12-31"><br><br>
+                </div>
+                <div>
+                    <input id="saveForm" name="saveForm" type="submit" value="Submit">
+                </div>
+        </main>
+        <hr>
+        <footer>
+            <div>&copy; <i>Meeting Minutes Template</i> at Pinterest.com</div>
+        </footer>
+    </body>
+</html>
