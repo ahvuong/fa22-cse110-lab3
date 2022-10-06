@@ -1,1 +1,2 @@
-# Lab 2 - Starter
+# Lab 2 - Starter  
+https://ahvuong.github.io/Lab2_Starter/
