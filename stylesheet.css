@@ -1,22 +1,34 @@
-body {
-    background-color:beige;
+* {
+    background-color: rgb(239, 252, 253);
 }
 
 h1 {
+    display: inline-block;
     background-color:rgb(245, 213, 174);
     color:coral;
     text-decoration: underline overline coral;
+    position: static;
 }
 
 h2 {
     background-color: bisque;
     color:hsl(30, 100%, 50%);
-    max-width: max-content;
+    position: sticky;
 }
 
 h3 {
     color: #0088ff;
+    min-width: 75%;
 }
+
+h3 p {
+    font-size: 0.95rem;
+    letter-spacing: 0.8px;
+}
+
+td[target=_blank] {
+    background-color: rgb(245, 245, 167);
+  }
 
 .block {
     display: block;
@@ -26,10 +38,87 @@ h3 {
     border-radius: 1em;
     padding: 10px 0.5em;
     margin: 20px 20px 20px 1em;
-    text-align: center;
+    text-align: left;
 }
 
-.smallblock {
+#sub {
     text-decoration: rgb(30, 108, 210) wavy underline;
+    max-width: max-content;
+}
 
+button:hover {
+    color:hsl(293, 100%, 50%);
+}
+
+form, fieldset {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+fieldset > legend {
+    background-color: rgb(246, 219, 210);
+}
+
+p ~ ul {
+    color: #aa00ff;
+}
+
+p + p {
+    color: red;
+}
+
+h3.block{
+    color: rgb(132, 0, 255);
+}
+
+.button {
+    background-image: linear-gradient(130deg, #fc894d 40%, #f34079);
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: 5px 5px 5px #f34079;
+}
+
+.flex-parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-child {
+    margin: auto;
+    background-repeat: no-repeat;
+    padding: 100px;
+    flex: 50%;
+}
+
+.flex-child-1 {
+    order: 1;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.flex-child-2 {
+    order: 2;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.flex-child-3 {
+    order: 3;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+@media all and (max-width: 500px) {
+    body {
+        background-color: #eea37b;
+    }
+    .flex-container {
+        flex-direction: column;
+      }
 }

@@ -10,7 +10,10 @@
                 border-collapse: collapse;
                 border: 1.5px solid rgb(50,50,50);
                 letter-spacing: 1px;
-                font-size: 0.8rem;
+                font-size: 0.9rem;
+                font-family: 'Cabin', sans-serif;
+                margin-left:auto;
+                margin-right:auto;
             }
             td, th {
                 border: 1px solid rgb(70,70,70);
@@ -23,26 +26,39 @@
                 text-align: center;
             }
         </style>
+        <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <style>
+            @import url('./grid.css');
+        </style>
     </head>
     <body>
-        <header style="text-align: center;">
-        <h1>TEAM MEETING MINUTES</h1><hr>
-        </header>
         <main>
+        <header style="text-align: center;">
+        <h1>TEAM MEETING MINUTES</h1>
+        </header>
+            <section class="flex-parent">
+                <div class="flex-child flex-child-1" style="background-image:url('https://media.istockphoto.com/vectors/modern-office-interiorbusiness-meeting-or-presentation-vector-id1159585502?k=20&m=1159585502&s=612x612&w=0&h=_etvm1i1sDRT2_H2Q4fyl82vpWQ1aNgBgYLFNSC1x0E=');"></div>
+                <div class="flex-child flex-child-2" style="background-image:url('https://image.shutterstock.com/image-vector/smiley-cartoon-businessman-text-on-260nw-2135662339.jpg');"></div>
+                <div class="flex-child flex-child-3" style="background-image:url('https://relishstudio.com/wp-content/uploads/2015/10/calendar.jpg');"></div>
+            </section><hr>
+
             <section>
                 <h2>Meeting Time</h2>
-                    <h3>
+                    <h3 class="block">
                         Date: Monday, October 3, 2022<br>
                         Time: 5:00 PM<br>
                         Location: WLH2001<br>
                         Zoom Meeting ID: 546 830 7330 (Pass: dAbj8e)
-                    </h3><hr>
+                        </h3>
+                    <hr>
             </section>
             
             <section>
                 <h2>Meeting Contents</h2>
                 <details>
-                    <summary>Details</summary>
+                    <summary >Details</summary>
                     <nav>
                         <ol>
                             <li><a href="#attendees">Attendees</a></li>
@@ -95,43 +111,47 @@
                         <td>Hayes Jefferson</td>
                         <td>CS</td>
                         <td>Tester</td>
-                        <td>Absent</td>
+                        <td target=_blank>Absent</td>
                     </tr>
                 </table>
             </section>
 
             <section>
-                <h2 id="unfinishedbusiness">Unfinished Business (20 minutes)</h2>
-                    <h3>Budget Report (10 minutes)</h3>
-                        <p>The budget for the project in previous meeting has been <span style="color:red;">finalized</span>, 
-                            and <b>was distributed</b> at this meeting<br> by <strong>Kathleen</strong>. The main change was an increased 
-                        spend. The motion to accept the revised budget was seconded and passed.
-                        </p>
-                    <h3>Software Research result (10 minutes)</h3>
-                        <p><strong>Roger</strong> explained <i>result of the research</i> that she has been doing into new software
-                        application. In this meeting, she explain<br> about her plan for developing this project. Her plan got approved by TA and team leader.
+                <h2>Unfinished Business (20 minutes)</h2>
+                    <h3 id="sub">Budget Report (10 minutes)</h3>
+                        <div>
+                            <p>The budget for the project in previous meeting has been <span>finalized</span>, and <b>was distributed</b> at this meeting by <strong>Kathleen</strong>. The main change was an increased 
+                            spend. The motion to accept the revised budget was seconded and passed.
+                            </p>
+                            <p> <strong>Joyce</strong> showed how to use github for the future project. He had not finished yet and would continue in the early of this meeting before starting the new contents. Tim will help Joyce to follow and update the github content.
+                            </p>
+                        </div>
+                    <h3 id="sub">Software Research result (10 minutes)</h3>
+                        <p><strong>Roger</strong> explained <i>result of the research</i> that she has been doing into new software application. In this meeting, she explain about her plan for developing this project. Her plan got approved by TA and team leader.
                         </p>
             </section>
 
             <section>
                 <h2 id="newbusiness">New Business Discussion (20 minutes)</h2>
-                    <h3>Project Plan</h3>
-                        <p>Proceeding the project. Team leader shows a clear reporting structure for roles, tasks, and core duties.<br>
-                        Roles are assigned to all members by <em><strong>Kathleen</strong> - team leader</em>. All are expected to be on time for the next meeting <br>
+                    <h3 id="sub">Project Plan</h3>
+                        <p >Proceeding the project. Team leader shows a clear reporting structure for roles, tasks, and core duties.
+                        Roles are assigned to all members by <em><strong>Kathleen</strong> - team leader</em>. All are expected to be on time for the next meeting
                         and be present during the whole meetings.
                         </p>
             </section>
             
             <section>
                 <h2 id="note">Meeting Notes (10 minutes)</h2>
-                    <ul>
-                        <li>Seek out the feedback from peers.</li>
-                        <li>Be accountable for all mistakes and share experience.</li>
-                        <li>Prioritize team's success.</li>
-                        <li>Raise flag when seeing blockers.</li>
-                        <li>Ask for help/question if anything is not clear.</li>
-                        <li>Respect others.</li>
-                    </ul>
+                    <p>
+                        <ul>
+                            <li>Seek out the feedback from peers.</li>
+                            <li>Be accountable for all mistakes and share experience.</li>
+                            <li>Prioritize team's success.</li>
+                            <li>Raise flag when seeing blockers.</li>
+                            <li>Ask for help/question if anything is not clear.</li>
+                            <li>Respect others.</li>
+                        </ul>
+                    </p>
             </section>
             
             <section>
@@ -142,17 +162,19 @@
                     </p>
             </section>
             
-            <section>
-                <h2 id="diagram">Diagram</h2>
-                    <label>Class Diagram</label><br>
-                    <img src="https://williamswu.files.wordpress.com/2016/04/uml2_simple_class_diagram1.png" alt="diagram">
+            <h2 id="diagrams">Diagram</h2>
+            <section class="grid">
+                <div class="pic pic-wide-row-column" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/d/d3/Diagram_of_a_complex_system_before_Facade_software_design_pattern.png');"></div>
+                <div class="pic pic-wide-row-column" style="background-image:url('https://williamswu.files.wordpress.com/2016/04/uml2_simple_class_diagram1.png');"></div>
+                <div class="pic pic-wide-row-column" style="background-image:url('https://www.tutorialspoint.com/design_pattern/images/bridge_pattern_uml_diagram.jpg');"></div>
+                <div class="pic pic-wide-row-column" style="background-image:url('https://www.sharepointeurope.com/wp-content/uploads/2018/11/Typescript-design-patterns-for-Sharepoint-Framework-Part-3-Builder1.jpg');"></div>
             </section>
 
             <section>
                 <h2 id="recording">Recording</h2>
-                    <h3>Meeting Audio</h3>
+                    <h3 id="sub">Meeting Audio</h3>
                     <audio controls src="MeetingAudio.mp3"></audio><br>
-                    <h3>Meeting Video</h3>
+                    <h3 id="sub">Meeting Video</h3>
                     <video controls width="750"><source src="MeetingVideo.mp4">video</video>
             </section>
             
@@ -170,7 +192,7 @@
                         <label>Message</label>
                         <textarea name="message" cols="50" rows="10"></textarea><br><br>
                     </div>
-                    
+
                     <div>
                         <label for="type-of-comments">Type of Your Questions:</label>
                         <input list="types" id="type-of-comments" name="type-of-comments">
@@ -224,7 +246,7 @@
                         <label for="start">Submission Date</label>
                         <input type="date" id="start" name="trip-start" value="2022-10-04" 
                                 min="2014-01-01" max="2040-12-31"><br><br>
-                        <button type="submit" value="submit">Submit</button>
+                        <button class="button" type="submit" value="submit">Submit</button>
                     </div>
                 </form>
                 <hr>
